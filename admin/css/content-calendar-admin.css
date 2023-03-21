@@ -2,3 +2,77 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+h1 {
+   text-align: center;
+}
+
+.cc_table {
+   border: 1px solid #ccc;
+   border-collapse: collapse;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.cc_table tr {
+   background-color: #f8f8f8;
+   border: 1px solid #ddd;
+   padding: 0.35em;
+}
+
+.cc_table th, .cc_table td {
+   padding: 0.625em;
+   text-align: center;
+}
+
+.cc_table th {
+   font-size: .85em;
+   letter-spacing: .1em;
+   text-transform: uppercase;
+}
+
+.cc_item {
+   position: relative;
+   width: 34%;
+   margin-top: 1em;;
+}
+
+.cc_label { 
+   font-size: medium;
+   float: left;
+} 
+
+@media screen and (max-width: 600px) {
+   .cc_table {
+      border: 0;
+   }
+
+   .cc_table th {
+      border: none;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+   }
+
+   .cc_table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 0.625em;
+   }
+
+   .cc_table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+   }
+
+   .cc_table td:last-child {
+      border-bottom: 0;
+   }
+}

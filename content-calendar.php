@@ -63,7 +63,6 @@ register_deactivation_hook( __FILE__, 'deactivate_content_calendar' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-content-calendar.php';
-
 /**
  * Begins execution of the plugin.
  *
@@ -73,6 +72,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-content-calendar.php';
  *
  * @since    1.0.0
  */
+
 function run_content_calendar() {
 
 	$plugin = new Content_Calendar();
@@ -80,3 +80,5 @@ function run_content_calendar() {
 
 }
 run_content_calendar();
+
+?>
